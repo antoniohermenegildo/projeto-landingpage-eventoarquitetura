@@ -1,0 +1,341 @@
+/* variaveis */
+:root{
+  --primary-color: #EB1CCC;
+  --secondary-color: #95989A;
+  --text-color-primary: #FFFFFF;
+  --text-color-secondary: #000000;
+  --text-color-tertiary: #5d5d5d;
+}
+/* reset do CSS */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+/* ---------------chamada do eventos-------------------- */
+/* box da chamada */
+#evento{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hrz-5.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text-color-primary);
+}
+/* box da descrição do evento */
+#descricao-evento{
+  font-size: 1.2em;
+  margin-bottom: .3em;
+}
+.titulo-evento,
+.data-evento{
+  color: var(--primary-color);
+}
+.titulo-evento{
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+.sobre-evento{
+  font-size: 1.8em;
+  text-transform: uppercase;
+  max-width: 350px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.data-evento{
+  font-weight: bold;
+}
+/* box do formulário da chamada */
+#formulario{
+  background-color: var(--secondary-color);
+  padding: 2em;
+  max-width: 22%;
+}
+/* titulo do formulario */
+#formulario p{
+  font-size: 1.5em;
+  color: var(--text-color-secondary);
+  margin-bottom: 1em;
+}
+/* formulario */
+#formulario form div{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8em;
+}
+/* labels e inputs */
+#formulario form div label{
+  color: var(--text-color-tertiary);
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+#formulario form div input,
+#formulario form div select{
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+/* botao */
+.btn{
+  background-color: var(--primary-color);
+  color: var(--text-color-primary);
+  text-transform: uppercase;
+  width: 100%;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.btn:hover{
+  opacity: 1;
+}
+
+/* -----------------Seção de benefícios----------------- */
+#beneficios-chave h2{
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 2em;
+  font-weight: 500;
+}
+.beneficios{
+  display: flex;
+  justify-content: space-around;
+  padding: 4em;
+  width: 80%;
+  margin: 0 auto;
+}
+.beneficio{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 20%;
+  color: var(--text-color-tertiary);
+}
+.beneficio .beneficio-img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1em;
+}
+#beneficio-1{
+  background-image: url("../img/sqr-1.jpg");
+}
+#beneficio-2{
+  background-image: url("../img/sqr-2.jpg");
+}
+#beneficio-3{
+  background-image: url("../img/sqr-3.jpg");
+}
+
+/* -----------------Seção de localização----------------- */
+#localizacao{
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hrz-5.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--text-color-primary);
+  margin-bottom: 3em;
+}
+#endereco, #localizacao-sobre{
+  width: 30%;
+}
+#endereco{
+  display: flex;
+}
+#endereco i{
+  color: var(--primary-color);
+  font-size: 4em;
+  margin-right: 0.5em;
+}
+#endereco-detalhes{
+  text-align: center;
+  font-size: 1.3em;
+}
+#localizacao-sobre h3{
+  color: var(--primary-color);
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+#localizacao-sobre p{
+  line-height: 1.5em;
+}
+
+/* -----------------Seção de detalhes----------------- */
+#detalhes{
+  width: 80%;
+  margin: 0 auto;
+}
+.detalhe{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5%;
+  margin-bottom: 4em;
+}
+.detalhe img{
+  width: 50%;
+}
+.detalhe h3{
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: 500;
+}
+.detalhe-1 h3{
+  font-size: 3em;
+  font-weight: 700;
+}
+.detalhe-descricao{
+  width: 100%;
+  padding-left: 2em;
+}
+.detalhe-descricao ul{
+  list-style-position: inside;
+}
+.detalhe-descricao ul li{
+  margin-bottom: 0.4em;
+}
+.detalhe-descricao ul li:last-child{
+  font-weight: bold;
+}
+
+/* -----------------Seção CTA----------------- */
+#cta{
+  height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hrz-5.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color-primary);
+}
+#cta h3{
+  margin-bottom: 1.2em;
+  font-size: 2em;
+  font-weight: 500;
+}
+#cta .btn{
+  width: 30%;
+  margin: 0 auto;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+/* -----------------Seção Rodape----------------- */
+#rodape{
+  text-align: center;
+  color: var(--secondary-color);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#rodape h3{
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+#rodape p:nth-child(2){
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+#rodape span{
+  font-weight: bold;
+}
+
+/* -----------------Responsividade----------------- */
+@media screen and (max-width:450px) {
+  /* header eventos */
+  #evento{
+    flex-direction: column;
+    height: auto;
+  }
+  #descricao-evento{
+    padding: 2em;
+  }
+  #descricao-evento h2{
+    margin-bottom: 0.5em;
+  }
+  #formulario{
+    max-width: 70%;
+    margin-bottom: 2em;
+  }
+  /* sessão beneficios */
+  .beneficios{
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 2em;
+  }
+  .beneficio{
+    max-width: 100%;
+    margin-bottom: 2em;
+  }
+  /* sessão localização */
+  #localizacao{
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 2em 0;
+  }
+  #endereco{
+    order: 2;
+    flex-direction: column;
+    width: 100%;
+  }
+  #endereco i{
+    margin: 0.3em 0;
+  }
+  #localizacao-sobre{
+    order: 1;
+    width: 100%;
+  }
+  #localizacao-sobre h3{
+    margin-bottom: 0;
+  }
+  #localizacao-sobre p{
+    display: none;
+  }
+  /* sessão detalhes */
+  .detalhe{
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    gap: 0;
+  }
+  .detalhe img{
+    width: 100%;
+    margin: 2em 0;
+  }
+  #detalhe-1 img{
+    display: none;
+  }
+  .detalhe-descricao{
+    padding: 0;
+  }
+  .detalhe img{
+    order: 1;
+  }
+  .detalhe .detalhe-descricao{
+    order: 2;
+  }
+  #detalhe-3 .detalhe-descricao{
+    margin-bottom: 3em;
+  }
+  /* sessão CTA */
+  #cta{
+    text-align: center;
+  }
+  #cta .btn{
+    width: 80%;
+  }
+}
